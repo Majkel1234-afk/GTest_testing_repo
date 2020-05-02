@@ -43,4 +43,15 @@ TEST_F(calcFixture, multiplicationMethodValueTest1)
 	EXPECT_DOUBLE_EQ(calc.multiplication(a,b), 16.5);
 }
 
+TEST_F(calcFixture, divisionMethodValueTest0)
+{
+	double a = 10.5, b = 0;
+	EXPECT_THROW(calc.division(a,b), std::string);
+}
+
+TEST_F(calcFixture, divisionMethodValueTest1)
+{
+	double a = 10.5, b = 2;
+	EXPECT_DOUBLE_EQ(calc.division(a,b), 5.25);
+}
 //dopisz dzielenie

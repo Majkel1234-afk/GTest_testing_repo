@@ -14,6 +14,15 @@ void mainFunction()
 
 	std::cout << "3.3 * 0 = " << calc.multiplication(3.3, 0) << std::endl;
 	std::cout << "3.3 * 1.1 = " << calc.multiplication(3.3, 1.1) << std::endl;
+
+	std::cout << "10.5 / 2 = " << calc.division(10.5, 2) << std::endl;
+	try{
+		std::cout << "10.5 / 0 = " << calc.division(10.5, 0) << std::endl;
+	}
+	catch(const std::string& mess)
+	{
+		std::cout << mess << std::endl;
+	}
 	//..dzielenie
 	//
 	//na koniec zrob mocka
