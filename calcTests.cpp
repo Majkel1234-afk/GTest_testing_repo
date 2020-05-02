@@ -13,6 +13,12 @@ TEST_F(calcFixture, additionMethodTest)
 	EXPECT_DOUBLE_EQ(calc.addition(a,b), 3.3);
 }
 
+TEST_F(calcFixture, subtractionMethod0ValueTest)
+{
+	double a = 3.3, b = 0;
+	EXPECT_DOUBLE_EQ(calc.subtraction(a,b), 3.3);
+}
+
 TEST_F(calcFixture, subtractionMethodTest)
 {
 	double a = 1.1, b = 2.2;
