@@ -3,7 +3,7 @@
 #include "calc.hpp"
 
 //#commitTest01
-
+//#commitTest02
 class calcParamsFixture : public ::testing::TestWithParam<double>
 {
 public:
