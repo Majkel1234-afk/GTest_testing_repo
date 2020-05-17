@@ -4,7 +4,7 @@
 
 void mainFunction()
 {
-	//1. Calculator's Class Test
+	//Calculator's Class Test
 	Calculator calc;
 	std::cout << "10.1 + 0 = " << calc.addition(10.1, 0) << std::endl;
 	std::cout << "10.1 + 5.5 = " << calc.addition(10.1, 5.5) << std::endl;
@@ -23,7 +23,4 @@ void mainFunction()
 	{
 		std::cout << mess << std::endl;
 	}
-	//..dzielenie
-	//
-	//na koniec zrob mocka
 }
