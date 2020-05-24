@@ -27,25 +27,25 @@ double Calculator::division(double a, double b)
 
 
 
-CalculatorUser::CalculatorUser(std::shared_ptr<CalculatorInterface> calc): calc_{calc}
+CalculatorUser::CalculatorUser(CalculatorInterface& calc): calc_{calc}
 {}
 
 double CalculatorUser::addSomeNumbers(double a, double b)
 {
-	return calc_->addition(a, b);
+	return calc_.addition(a, b);
 }
 
 double CalculatorUser::subtractSomeNumbers(double a, double b)
 {
-	return calc_->subtraction(a, b);
+	return calc_.subtraction(a, b);
 }
 
 double CalculatorUser::multiplySomeNumbers(double a, double b)
 {
-	return calc_->multiplication(a, b);
+	return calc_.multiplication(a, b);
 }
 
 double CalculatorUser::divideSomeNumbers(double a, double b)
 {
-	return calc_->division(a, b);
+	return calc_.division(a, b);
 }

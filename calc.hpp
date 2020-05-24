@@ -1,5 +1,4 @@
 #pragma once
-#include <memory>
 
 class CalculatorInterface
 {
@@ -24,12 +23,12 @@ public:
 class CalculatorUser
 {
 public:
-	CalculatorUser(std::shared_ptr<CalculatorInterface> calc);
+	CalculatorUser(CalculatorInterface&);
 	double addSomeNumbers(double,double);
 	double subtractSomeNumbers(double,double);
 	double multiplySomeNumbers(double,double);
 	double divideSomeNumbers(double,double);
 private:
-	std::shared_ptr<CalculatorInterface> calc_;
+	CalculatorInterface& calc_;
 };
 
